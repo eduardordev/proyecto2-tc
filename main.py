@@ -68,6 +68,44 @@ def convert_to_cnf(grammar):
 
 grammar = convert_to_cnf(grammar)
 
+# S → NP VP
+
+# VP → VP PP
+# VP → V NP
+# VP → T_cooks
+# VP → T_drinks
+# VP → T_eats
+# VP → T_cuts
+
+# NP → Det N
+# NP → T_he
+# NP → T_she
+
+# PP → P NP
+
+# V → T_cooks
+# V → T_drinks
+# V → T_eats
+# V → T_cuts
+
+# P → T_in
+# P → T_with
+
+# N → T_cat
+# N → T_dog
+# N → T_beer
+# N → T_cake
+# N → T_juice
+# N → T_meat
+# N → T_soup
+# N → T_fork
+# N → T_knife
+# N → T_oven
+# N → T_spoon
+
+# Det → T_a
+# Det → T_the
+
 # CYK (Cocke-Younger-Kasami) parsing de gramática CFG
 def cyk(word, grammar):
     n = len(word)
